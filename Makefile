@@ -16,7 +16,6 @@ clean:
 upgrade:
 	curl https://ctan.math.ca/tex-archive/macros/latex/contrib/IEEEtran/IEEEtran.cls \
 		-o IEEEtran.cls
-	curl http://ctan.mirror.rafal.ca/macros/latex/contrib/xurl/latex/xurl.sty -o xurl.sty
 	curl https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/IEEEtranBST2.zip -o IEEEtranBST2.zip && \
 		unzip -o IEEEtranBST2.zip IEEEtran.bst && \
 		rm -f IEEEtranBST2.zip
