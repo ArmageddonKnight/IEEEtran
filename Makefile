@@ -14,8 +14,7 @@ clean:
 		   -name "*.synctex.gz" \) | xargs $(RM)
 
 upgrade:
-	curl https://ctan.math.ca/tex-archive/macros/latex/contrib/IEEEtran/IEEEtran.cls \
-		-o IEEEtran.cls
-	curl https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/IEEEtranBST2.zip -o IEEEtranBST2.zip
+	curl -O https://ctan.math.ca/tex-archive/macros/latex/contrib/IEEEtran/IEEEtran.cls
+	curl -O https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/IEEEtranBST2.zip
 	unzip -o IEEEtranBST2.zip IEEEtran.bst
-	rm -f IEEEtranBST2.zip
+	$(RM) IEEEtranBST2.zip
