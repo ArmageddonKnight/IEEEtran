@@ -28,7 +28,7 @@ clean:
 	find $(FIGURES_FOLDER) -name "*-crop.pdf" | xargs $(RM)
 
 upgrade:
-	curl -O https://ctan.math.ca/tex-archive/macros/latex/contrib/IEEEtran/IEEEtran.cls
+	curl -O https://mirror.quantum5.ca/CTAN/macros/latex/contrib/IEEEtran/IEEEtran.cls 
 	curl -O https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/IEEEtranBST2.zip
 	unzip -o IEEEtranBST2.zip IEEEtran.bst
 	$(RM) IEEEtranBST2.zip
